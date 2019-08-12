@@ -1,0 +1,218 @@
+@import url('font.css');
+/* ==========================================================================
+	 Author's custom styles
+	 ========================================================================== */
+body {
+  background: white;
+  font-family: "Avenir";
+  color: #2E5597;
+  font-size: 16px;
+  font-weight: normal;
+  overflow-x: hidden;
+  width: 100%;
+}
+a:hover {
+  text-decoration: none;
+}
+.menu {
+  padding: 40px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.menu .brand {
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: 2E5597;
+  float: left;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+@media all and (min-width: 320px) and (max-width: 640px) {
+  .menu ul {
+    clear: both;
+    float: left;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
+.menu ul li {
+  padding: 0 20px;
+  float: left;
+}
+@media all and (min-width: 320px) and (max-width: 640px) {
+  .menu ul li {
+    padding: 0 20px 0 0;
+  }
+}
+.menu ul li a {
+  color: #2E5597;
+}
+.menu ul li a:hover {
+  color: #8BA0C3;
+}
+.site-wrap {
+  max-width: 800px;
+  padding-left: 150px;
+}
+@media all and (min-width: 320px) and (max-width: 640px) {
+  .site-wrap {
+    padding: 0;
+  }
+}
+.banner {
+  margin: 200px 0;
+}
+@media all and (min-width: 320px) and (max-width: 640px) {
+  .banner {
+    margin: 70px 0;
+  }
+}
+.banner .container {
+  position: relative;
+}
+.banner .shape {
+  position: fixed;
+  margin-left: -100px;
+  z-index: 10;
+}
+@media all and (min-width: 320px) and (max-width: 640px) {
+  .banner .shape {
+    position: absolute;
+    margin: 0;
+    top: -60px;
+  }
+}
+.banner .banner-title {
+  font-weight: 100;
+  margin: 0;
+  font-size: 45px;
+  line-height: 1;
+}
+@media all and (min-width: 320px) and (max-width: 640px) {
+  .banner .banner-title {
+    font-size: 36px;
+  }
+}
+.banner .banner-subtitle {
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 30px 0 0;
+  color: #2E5597;
+}
+.project {
+  padding: 20px 0;
+  position: relative;
+  background: #CFD9E8;
+  border-top: solid 1px #CFD9E8;
+  z-index: 2;
+}
+@media all and (min-width: 320px) and (max-width: 640px) {
+  .project {
+    padding: 50px 0;
+  }
+}
+.project .project-bg {
+  background-size: cover;
+  -webkit-background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.12;
+  z-index: -1;
+}
+.project .project-client {
+  text-transform: uppercase;
+  color: #2E5597;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.project .project-brief {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 350;
+  margin-bottom: 50px;
+  color: #2E5597;
+}
+@media all and (min-width: 320px) and (max-width: 640px) {
+  .project .project-brief {
+    font-size: 18px;
+  }
+}
+.project .project-link {
+  color: #2E5597;
+  text-decoration: underline;
+}
+.contact-illustration {
+  position: absolute;
+  bottom: 0;
+  right: 30%;
+}
+.section {
+  padding: 100px 0;
+  position: relative;
+}
+.section.section-red {
+  background: #D496A7;
+  color: white;
+}
+.section .section-title {
+  text-transform: uppercase;
+  color: #2E5597;
+  margin: 30px 0;
+}
+.section .section-title.clear-top {
+  margin-top: 60px;
+}
+.section .h3 {
+  font-weight: 100;
+}
+@media all and (min-width: 320px) and (max-width: 640px) {
+  .section .h3 {
+    font-size: 18px;
+  }
+}
+.section .contact-h4 {
+  line-height: 1.3;
+  font-weight: normal;
+  color: #f9b7b7;
+  margin-top: 30px;
+  font-size: 18px;
+}
+.section .panel {
+  background: #444444;
+  height: 0;
+  padding-bottom: 60%;
+  position: relative;
+}
+.section .panel .panel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.section .panel:hover {
+  background: #3f3f3f;
+}
+.section .panel .panel-body {
+  position: absolute;
+  bottom: 0;
+}
+.section .panel .panel-body h3 {
+  font-weight: 100;
+  font-size: 22px;
+  color: #AED3FF;
+  margin: 10px 0;
+}
+.section .panel .panel-body p {
+  line-height: 1.2;
+}
